@@ -65,6 +65,7 @@ The package expects simulation data in the following formats from Gadget4:
 - HDF5 snapshot files containing particle positions, velocities, and other properties
 - Subfind + Friends-of-friends (FOF) files for halo identification (optional for some analyses)
 Examples of these can be found at https://keeper.mpdl.mpg.de/d/04376cbd45414bdab4a1/
+
 In the case of **jeans_j_factor_cal.py**, it expects pyGravSphere MCMC chains files.
 
 ## Configuration
