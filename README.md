@@ -23,8 +23,8 @@ DwarfSphere is a comprehensive toolkit for analyzing dark matter dynamics, densi
 
 ### Analysis Scripts
 
-- **wolf_cal_dm.py**: Implements the Wolf mass estimator for dark matter halos, which uses the velocity dispersion at the r3 radius to estimate enclosed mass.
-- **wolf_cal_stars.py**: Similar to wolf_cal_dm.py but specialized for stellar components.
+- **wolf_cal_stars.py**: Implements the Wolf mass estimator for simulated dwarf galaxies, using the stellar component as a tracer, and assuming that this component has a Plummer density profile.
+- **wolf_cal_dm.py**: Similar to wolf_cal_stars.py but using dark matter as a tracer, assuming a Zhao profile for the dark matter halo.
 - **jeans_j_factor_cal.py**: Calculates J-factors from densities calculated with [pyGravSphere](https://github.com/AnnaGenina/pyGravSphere).
 - **true_j_factor_cal.py**: Computes true J-factors directly from simulation data.
 - **ecc_cal.py**: Tools for analyzing eccentric orbits of dwarf galaxies around their host galaxies.
@@ -63,7 +63,8 @@ DwarfSphere is a comprehensive toolkit for analyzing dark matter dynamics, densi
 
 The package expects simulation data in the following formats from Gadget4:
 - HDF5 snapshot files containing particle positions, velocities, and other properties
-- Subfind + Friends-of-friends (FOF) files for halo identification (optional for some analyses)\n
+- Subfind + Friends-of-friends (FOF) files for halo identification (optional for some analyses)
+
 Examples of these can be found at https://keeper.mpdl.mpg.de/d/04376cbd45414bdab4a1/
 
 In the case of **jeans_j_factor_cal.py**, it expects pyGravSphere MCMC chains files.
