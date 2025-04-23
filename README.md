@@ -79,3 +79,8 @@ You can configure the package in multiple ways:
 ## Dependencies
 
 See `requirements.txt` for a complete list of dependencies.
+
+## Acknowledgements
+
+- Anna Genina (project supervisor)
+- Max Planck Institute for Astrophysics
