@@ -1,0 +1,76 @@
+# Configuration file for DwarfSphere Wolf estimator
+# This is an example configuration file showing all the parameters
+
+# File paths for input/output data
+file_paths:
+  # Directory containing snapshot files
+  snapshot_dir: "/ptmp/mpa/kristcho/dsph_orbit/ecc_orbits/fornax/output_orbit_stellar_e7_bovy"
+  
+  # Directory containing FOF files
+  fof_dir: "/ptmp/mpa/kristcho/dsph_orbit/ecc_orbits/fornax/output_orbit_stellar_e7_bovy"
+  
+  # Directory for saving results
+  results_dir: "/ptmp/mpa/kristcho/dsph_orbit/ecc_orbits/fornax/fits"
+
+  # Optional: Directly specify the wolf fit results path
+  # If not provided, the script will find the latest wolf_fit results automatically
+  final_fit_path: /ptmp/mpa/kristcho/dsph_orbit/fornax/fits/bovy_wolf_fit_bound_dm_4
+
+# Milky Way potential configurations
+mw_potentials:
+  # These are included for reference but aren't directly used in the code
+  # The potential_type in run_parameters will determine which settings are used
+  light:
+    scaling_factor: 1.0   # Standard Bovy potential
+
+  heavy:
+    scaling_factor: 2.0   # Factor of 2 (bovy16)
+
+# Analysis parameters
+analysis:
+  # Whether to use tidal radius for filtering (True) or bound particles filter (False)
+  use_tidal_filter: false
+  
+  # Number of bins for velocity dispersion and fitting in DM analysis
+  bin_size: 41
+  
+  # Number of bins for stellar component analysis
+  bin_size_stellar: 31
+  
+  # Number of bins for velocity dispersion in stellar analysis
+  bin_size_vel: 21
+  
+  # Number of bins for r3 calculation in stellar analysis
+  bin_size_r3_stellar: 7
+  
+  # Use counts-based binning (True) or regular log-spaced bins (False)
+  use_counts: true
+  
+  # Use logarithmic values for certain fits
+  use_log: true
+  
+  # Density threshold for shrinking spheres algorithm
+  density_threshold: 250
+
+# Run parameters
+run_parameters:
+  # Name of the galaxy in galpy database
+  galpy_name: "Fornax"
+  
+  # Type of potential to use: "light" (standard bovy), "heavy" (factor of 2), or "custom"
+  potential_type: "light"
+  
+  # Custom potential factor - only required when potential_type is "custom"
+  # potential_factor: 1.5
+  
+  # Particle type to analyze
+  # - Use 1 for stellar component (wolf_cal_stars.py)
+  # - Use 3 for dark matter (wolf_cal_dm.py)
+  particle_type: 1
+
+# Global parameters
+hubble_parameter: 1.0
+
+# Example usage:
+# python wolf_cal_stars.py config.yaml
+# python wolf_cal_dm.py config.yaml

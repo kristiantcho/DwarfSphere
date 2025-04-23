@@ -1,0 +1,40 @@
+## J-Factor Calculator Configuration
+
+# File paths section for input/output
+file_paths:
+  # Directory where results will be saved
+  results_dir: /ptmp/mpa/kristcho/jeans_results
+  
+  # Directory containing chain files
+  chains_dir: /ptmp/mpa/kristcho/jeans_results
+  
+  # Directory with galaxy data (optional, defaults to results_dir/GalaxyData)
+  galaxy_data_dir: /ptmp/mpa/kristcho/jeans_results/GalaxyData
+
+# Run parameters section
+run_parameters:
+  # Name of the dwarf spheroidal galaxy
+  dsph_name: fornax
+  
+  # Milky Way potential type
+  mw_type: bovy
+  
+  # Snapshot time identifier
+  snap_time: today
+  
+  # Whether to use power law model (default: false)
+  power_law: false
+  
+  # Whether to use Baes model (default: false)
+  baes: false
+  
+  # Theta max in radians (default: 0.5 degrees in radians = 0.5*0.0174533)
+  theta_max: 0.00872665
+
+# Galaxy distances (in kpc)
+galaxy_distances:
+  fornax: 147
+  sculptor: 86
+  ursa_min: 76
+  draco: 76
+  carina: 105

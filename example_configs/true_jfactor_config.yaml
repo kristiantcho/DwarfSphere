@@ -1,0 +1,47 @@
+## True J-Factor Calculator Configuration
+
+# File paths section for input/output
+file_paths:
+  # Directory containing snapshot files
+  orbit_base_dir: /ptmp/mpa/kristcho/dsph_orbit
+  
+  # Directory where results will be saved
+  results_dir: /ptmp/mpa/kristcho/jeans_results
+  
+  # Optional: Directly specify the wolf fit results path
+  # If not provided, the script will find the latest wolf_fit results automatically
+  final_fit_path: /ptmp/mpa/kristcho/dsph_orbit/fornax/fits/bovy_wolf_fit_bound_dm_4
+
+# Run parameters section
+run_parameters:
+  # Name of the dwarf spheroidal galaxy (required for directory structure)
+  dsph_name: fornax
+  
+  # Name for Galpy orbit calculation
+  galpy_name: Fornax
+  
+  # Milky Way potential type: bovy (light), heavy, bovy16, or custom
+  mw_type: bovy
+  
+  # Snapshot time identifier: today, apo, or peri
+  snap_time: today
+  
+  # Particle type identifier in filenames (default: dm)
+  particle_type: dm
+  
+  # Any additional identifier for directories
+  extras: ""
+  
+  # Particle type ID in GADGET format (default: 3)
+  particle_type_id: 3
+  
+  # Stellar particle type ID in GADGET format (default: 1)
+  stellar_type_id: 1
+
+# Galaxy distances (in kpc)
+galaxy_distances:
+  fornax: 147
+  sculptor: 86
+  ursa_min: 76
+  draco: 76
+  carina: 105

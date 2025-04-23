@@ -1,0 +1,27 @@
+## Eccentricity Calculator Configuration
+
+# File paths section for input/output
+file_paths:
+  # Base directory containing orbit data
+  orbit_base_dir: /ptmp/mpa/kristcho/dsph_orbit
+  
+  # Optional: Directly specify the output path for results
+  # If not provided, the script will create a new numbered directory automatically
+  # final_fit_path: /ptmp/mpa/kristcho/dsph_orbit/ecc_orbits/fornax/fits/bovy_wolf_fit_ecc_bound_42
+
+# Run parameters section
+run_parameters:
+  # Name of the dwarf spheroidal galaxy
+  dsph_name: fornax
+  
+  # Milky Way potential type: bovy, bovy16, etc.
+  mw_type: bovy
+  
+  # Filtering mode for results (default: bound)
+  filter_mode: bound
+  
+  # Dark matter particle type ID in GADGET format (default: 3)
+  dm_particle_type_id: 3
+  
+  # Stellar particle type ID in GADGET format (default: 1)
+  stellar_particle_type_id: 1
