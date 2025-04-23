@@ -34,7 +34,7 @@ DwarfSphere is a comprehensive toolkit for analyzing dark matter dynamics, densi
 - **wolf_config.yaml**: Configuration for Wolf mass estimator calculations
 - **jfactor_config.yaml**: Configuration for J-factor calculations
 - **true_jfactor_config.yaml**: Configuration for true J-factor calculations
-- **ecc_config.yaml**: Configuration for orbit eccentricity calculations
+- **ecc_config.yaml**: Configuration for orbit eccentricity, dwarf sphericity, and dynamics calculations
 
 ## Key Features
 
