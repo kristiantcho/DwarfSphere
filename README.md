@@ -1,6 +1,6 @@
 # DwarfSphere
 
-A set of python scripts for analyzing dwarf spheroidal galaxy simulations and their dark and stellar matter content. This code was used to produce many of the key results in the Broken Expectations paper (please cite this if you use this code!)
+A set of Python scripts for analyzing dwarf spheroidal galaxy simulations and their dark and stellar matter content. This code was used to produce many of the key results in the Broken Expectations paper (please cite this if you use this code!)
 
 Paper: (coming soon)
 
@@ -25,7 +25,7 @@ DwarfSphere is a comprehensive toolkit for analyzing dark matter dynamics, densi
 
 - **wolf_cal_dm.py**: Implements the Wolf mass estimator for dark matter halos, which uses the velocity dispersion at the r3 radius to estimate enclosed mass.
 - **wolf_cal_stars.py**: Similar to wolf_cal_dm.py but specialized for stellar components.
-- **jeans_j_factor_cal.py**: Calculates J-factors from densities calculated with (py)GravSphere.
+- **jeans_j_factor_cal.py**: Calculates J-factors from densities calculated with [pyGravSphere](https://github.com/AnnaGenina/pyGravSphere).
 - **true_j_factor_cal.py**: Computes true J-factors directly from simulation data.
 - **ecc_cal.py**: Tools for analyzing eccentric orbits of dwarf galaxies around their host galaxies.
 
@@ -64,6 +64,7 @@ DwarfSphere is a comprehensive toolkit for analyzing dark matter dynamics, densi
 The package expects simulation data in the following formats from Gadget4:
 - HDF5 snapshot files containing particle positions, velocities, and other properties
 - Subfind + Friends-of-friends (FOF) files for halo identification (optional for some analyses)
+Examples of these can be found at https://keeper.mpdl.mpg.de/d/04376cbd45414bdab4a1/
 In the case of **jeans_j_factor_cal.py**, it expects pyGravSphere MCMC chains files.
 
 ## Configuration
