@@ -12,7 +12,6 @@ DwarfSphere is a comprehensive toolkit for analyzing dark matter dynamics, densi
 - Fitting density profiles using various models
 - Computing velocity dispersions and mass estimates with the Wolf estimator
 - Performing J-factor calculations for dark matter analyses
-- Creating visualizations of mass distributions and orbits
 
 ## Scripts
 
@@ -82,5 +81,5 @@ See `requirements.txt` for a complete list of dependencies.
 
 ## Acknowledgements
 
-- Anna Genina (project supervisor)
-- Max Planck Institute for Astrophysics
+- _Anna Genina_ (project supervisor)
+- _Max Planck Institute for Astrophysics_
