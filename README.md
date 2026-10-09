@@ -2,7 +2,7 @@
 
 A set of Python scripts for analyzing dwarf spheroidal galaxy simulations and their dark and stellar matter content. This code was used to produce many of the key results in the Broken Expectations paper (please cite this if you use this code!)
 
-Paper: (coming soon)
+Paper: https://arxiv.org/abs/2504.18617
 
 ## Overview
 
